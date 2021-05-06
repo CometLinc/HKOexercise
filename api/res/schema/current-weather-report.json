@@ -1,0 +1,123 @@
+{
+    "get": {
+        "type": "object",
+        "properties": {
+            "rainfall": {
+                "type": "object",
+                "properties": {
+                    "data":{
+                        "type": "array",
+                        "items":{
+                            "type": "object",
+                            "properties": {
+                                "unit":{
+                                    "type":"string"
+                                },
+                                "place":{
+                                    "type":"string"
+                                },
+                                "max":{
+                                    "type":"integer"
+                                },
+                                "main":{
+                                    "type":"string"
+                                }
+                            }
+                        }
+                    },
+                    "startTime":{
+                        "type":"string"
+                    },
+                    "endTime":{
+                        "type":"string"
+                    }
+                }
+                
+            },
+            "icon": {
+                "type": "array"
+            },
+            "iconUpdateTime":{
+                "type": "string"
+            },
+            "uvindex":{
+                "type": "object",
+                "properties":{
+                    "data":{
+                        "type": "array",
+                        "items":{
+                            "type": "object",
+                            "properties": {
+                                "place":{
+                                    "type":"string"
+                                },
+                                "value":{
+                                    "type":"number"
+                                },
+                                "desc":{
+                                    "type":"string"
+                                }
+                            }
+                        } 
+                    },
+                    "recordDesc":{
+                        "type": "string"
+                    }
+                }
+            },
+            "updateTime":{
+                "type":"string"
+            },
+            "temperature":{
+                "type": "object",
+                "properties": {
+                    "data":{
+                        "type": "array",
+                        "items":{
+                            "type": "object",
+                            "properties": {
+                                "place":{
+                                    "type":"string"
+                                },
+                                "value":{
+                                    "type":"integer"
+                                },
+                                "unit":{
+                                    "type":"string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "warningMessage":{},
+            "mintempFrom00To09":{},
+            "rainfallFrom00To12":{},
+            "rainfallLastMonth":{},
+            "rainfallJanuaryToLastMonth":{},
+            "tcmessage":{},
+            "humidity":{
+                "type": "object",
+                "properties": {
+                    "data":{
+                        "type": "array",
+                        "items":{
+                            "type": "object",
+                            "properties": {
+                                "place":{
+                                    "type":"string"
+                                },
+                                "value":{
+                                    "type":"integer"
+                                },
+                                "unit":{
+                                    "type":"string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
